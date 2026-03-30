@@ -1,0 +1,15 @@
+{
+  "target_roles": [
+    "AI Engineer"
+  ],
+  "preferred_domains": [
+    "all domains"
+  ],
+  "location_preferences": ["Poissy", "all France", "remote", "hybrid", "on-site"],
+  "work_style": ["balanced profile with stronger production emphasis", "builder", "fast learner", "adaptable"],
+  "availability": {
+    "job_type": ["CDI", "CDD"],
+    "start": "immediate"
+  },
+  "compensation": "open to discussion"
+}

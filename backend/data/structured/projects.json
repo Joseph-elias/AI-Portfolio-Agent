@@ -1,0 +1,44 @@
+[
+  {
+    "name": "SISSI",
+    "domains": ["LLM", "SaaS", "Productivity AI", "Knowledge Systems"],
+    "skills_used": ["LLM Pipelines", "Semantic Search", "pgvector", "React", "Django REST", "Supabase"],
+    "summary_en": "AI executive assistant startup where Joseph works as AI Engineer and Co-founder, building note-structuring pipelines, semantic retrieval, and production integration.",
+    "summary_fr": "Startup d assistant executif IA ou Joseph est AI Engineer et Co-founder, avec pipelines LLM, retrieval semantique et integration produit en production."
+  },
+  {
+    "name": "Polished AI",
+    "domains": ["LLM", "Developer Tools", "Productivity"],
+    "skills_used": ["Chrome Extension", "FastAPI", "Gemini Integration", "Prompting"],
+    "summary_en": "AI writing assistant composed of a Chrome extension and backend APIs for rewriting and translation workflows.",
+    "summary_fr": "Assistant d ecriture IA compose d une extension Chrome et d APIs backend pour des workflows de reformulation et traduction."
+  },
+  {
+    "name": "Radiomics / LIFEx Contribution",
+    "domains": ["Medical AI", "Radiomics", "Research Engineering"],
+    "skills_used": ["Python", "Medical Imaging", "Radiomics", "Pipeline Optimization"],
+    "summary_en": "Developed 4 radiomic features integrated into LIFEx, a radiomics tool used by more than 10,000 users globally.",
+    "summary_fr": "Developpement de 4 features radiomiques integrees dans LIFEx, un outil utilise par plus de 10 000 utilisateurs dans le monde."
+  },
+  {
+    "name": "LegalChatbot",
+    "domains": ["LLM", "RAG", "Legal Tech", "Arabic NLP"],
+    "skills_used": ["FastAPI", "React", "SBERT", "RAG", "Prompt Engineering"],
+    "summary_en": "Arabic legal assistant for Lebanese law using semantic retrieval and grounded legal answers.",
+    "summary_fr": "Assistant juridique arabe pour le droit libanais avec retrieval semantique et reponses juridiques sourcees."
+  },
+  {
+    "name": "MediNetFusion",
+    "domains": ["Machine Learning", "Healthcare AI", "Time Series"],
+    "skills_used": ["PyTorch", "XGBoost", "scikit-learn", "Model Evaluation"],
+    "summary_en": "Multimodal time-series classification pipeline combining CNN, LSTM, and XGBoost for diabetes risk prediction.",
+    "summary_fr": "Pipeline de classification multimodale de series temporelles combinant CNN, LSTM et XGBoost pour la prediction du risque de diabete."
+  },
+  {
+    "name": "Patient-RAG",
+    "domains": ["LLM", "Medical AI", "Knowledge Systems"],
+    "skills_used": ["RAG", "FAISS", "Prompt Engineering", "Validation Guardrails"],
+    "summary_en": "Patient-level medical-style RAG with strict JSON outputs, citations, and guardrails.",
+    "summary_fr": "RAG de type medical au niveau patient avec sorties JSON strictes, citations et guardrails."
+  }
+]

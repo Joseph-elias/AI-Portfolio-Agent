@@ -1,0 +1,62 @@
+Joseph Elias Al Khoury
+Ingénieur en Intelligence Artificielle
+josepheliaskh@gmail.com +33 7 44849533 Poissy, France 
+fluffy-melba-37cf19.netlify.app/ linkedin.com/in/joseph-elias-al-khoury-0a54a8239/ 
+github.com/Joseph-elias 
+PROFIL
+Ingénieur en intelligence artificielle avec expérience en data science et machine learning, travaillant sur des données hétérogènes 
+(vision, texte, séries temporelles, tabulaire). Intéressé par la compréhension théorique et empirique des méthodes dʼapprentissage. À la 
+recherche dʼun doctorat en IA /  ML.
+EXPERIENCES PROFESSIONNELLES
+Data Scientist en imagerie médicale, Institut Curie (U1288 Inserm)
+•Conçu et entraîné un modèle de prédiction de la survie dans le cancer du poumon à partir de données 
+multimodales, analyse de +180 patients (IRM/ TEP/ clinique)
+•Découverte, définition et validation de nouvelles features radiomiques, désormais intégrées dans LIFEx 
+(logiciel radiomique open-source).09/2024 – 09/2025
+Orsay, France
+•Rédaction en cours d'un article scientifique.
+Stage M1 en IA, Institut Curie (U1288 Inserm)
+•Reconstruction et optimisation d'un pipeline d'extraction radiomique sur IRM cérébrale (standardisation 
+hWS, recalage FLIRT, correction N4ITK).
+•Réduction du temps d'exécution grâce à la parallélisation multi-CPU et à la réorganisation du pipeline 
+(Réduction du temps d'exécution du pipeline de 40%).03/2024 – 08/2024
+Orsay, France
+•Développement d'une image Docker assurant une exécution standardisée, portable et reproductible du 
+pipeline pour l'ensemble du laboratoire.
+•Développement de modèles de prédiction pour les mutations génomiques (H3.3, TP53).
+PUBLICATIONS
+J-E. Al Khoury , C. Nioche , M. Lacroix , M. Hamadouche , C. Suchel , P-Y. Brillet , F. Frouin. Improving a classification model between lung 
+adenocarcinoma (ADK) from squamous cell lung cancer (SQc) through the integration of clinical and MRI data. EUROPEAN SOCIETY OF 
+RADIOLOGY. Conference on March 4, 2026 Vienna.
+J-E. Al Khoury , C. Nioche , M. Lacroix , M. Hamadouche , P-Y. Brillet , F. Frouin. New relevant radiomic features describing radial intensity 
+measures. EUROPEAN SOCIETY OF RADIOLOGY. Conference on March 4, 2026 Vienna.
+PROJETS ACADÉMIQUES
+Classification de séries temporelles multimodales (CNN, LSTM, XGBoost), Développement d'un système de prédiction précoce du 
+diabète de type 2 à partir de données temporelles multivariées (77 biomarqueurs sur 12 mois).
+Chatbot Juridique Libanais (RAG, SBERT, Gemini, FastAPI, React), 
+Développement d'un assistant juridique intelligent capable de répondre en arabe aux questions de droit libanais via une architecture RAG.
+Analyse et optimisation de la chaîne logistique des Services des Urgences Adultes (SUA) – CHU de Lille, 
+Optimisation des flux patients aux urgences adultes du CHU de Lille (data réelle, ordonnancement, prédiction, SMA, IoT).
+EDUCATION
+Master Ingénierie de la Santé Parcours MIAS : Management de l'intelligence artificielle en santé, 
+Mention Très Bien: 16/20
+Parcours suivi entre l'École Centrale de Lille et l'Université de Lille.09/2023 – 09/2025
+Lille, France
+Licence en Génie Biomedical, Lebanese International University (LIU), Mention : Très Bien
+Compétences en électronique, microcontrôleurs, traitement des signaux, systèmes électromécaniques et 
+robotique appliquée au médical.01/2020 – 06/2023
+Koura, Liban
+LANGUES
+Arabe (Maternelle) Anglais (C1) Français (C1)
+
+COMPÉTENCES
+MLOps & Déploiement — FastAPI, Docker, Streamlit, Gradio, Elasticsearch (vector-based retrieval), Git, Linux shell, MLflow
+Data & Expérimentation — Data preprocessing, Feature engineering, Model evaluation, Hyperparameter tuning, Benchmarking,
+Reproducibility studies, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, Spark, Power BI, Data fusion, Medical imaging, Optimization
+algorithms
+Langages de Programmation — Python, Java, C, SystemVerilog, MATLAB, R, SQL
+Axes de Modélisation — Supervised & unsupervised learning, Regression & classification, Retrieval-Augmented Generation (RAG), LLMS
+& prompt engineering, Large-scale data analysis, NLP, Deep learning (PyTorch, TensorFlow), Ontologies, Fuzzy logic
+Logiciels & Outils — Visual Studio Code, LabView, GitHub, GitLab, SPARQL, HTML, CSS, SysML/UML
+CENTRES D'INTÉRÊT
+Basket-ball Échecs Randonnée

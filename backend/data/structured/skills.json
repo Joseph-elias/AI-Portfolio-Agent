@@ -1,0 +1,18 @@
+{
+  "languages": ["Python", "TypeScript", "JavaScript", "SQL", "Java", "R", "MATLAB"],
+  "ai_ml": [
+    "RAG",
+    "LLMs",
+    "Prompt Engineering",
+    "Embeddings",
+    "NLP",
+    "Deep Learning",
+    "Radiomics",
+    "Multimodal Learning",
+    "Time Series Classification"
+  ],
+  "frameworks": ["FastAPI", "React", "Next.js", "Django REST", "PyTorch", "TensorFlow", "scikit-learn"],
+  "tools": ["Git", "Docker", "MLflow", "FAISS", "Chroma", "pgvector", "Elasticsearch", "Linux Shell"],
+  "cloud": ["Supabase", "basic AWS"],
+  "spoken_languages": ["Arabic", "French", "English"]
+}

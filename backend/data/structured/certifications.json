@@ -1,0 +1,42 @@
+[
+  {
+    "name": "n8n Course: No Code AI Agent Builder",
+    "issuer": "n8n",
+    "date": "2026-02-26",
+    "certificate_code": "9894952",
+    "verification_url": null,
+    "status": "verified"
+  },
+  {
+    "name": "LLMs & LangChain and Workflow Design",
+    "issuer": "Course provider",
+    "date": "2026-03-03",
+    "certificate_code": "9915690",
+    "verification_url": null,
+    "status": "verified"
+  },
+  {
+    "name": "Skilljar Certificate",
+    "issuer": "Skilljar",
+    "date": "2026-03-23",
+    "certificate_code": "jkh6ao74rfu7",
+    "verification_url": "https://verify.skilljar.com/c/jkh6ao74rfu7",
+    "status": "verified"
+  },
+  {
+    "name": "Skilljar Certificate",
+    "issuer": "Skilljar",
+    "date": "2026-03-23",
+    "certificate_code": "85icfbburs4f",
+    "verification_url": "https://verify.skilljar.com/c/85icfbburs4f",
+    "status": "verified"
+  },
+  {
+    "name": "Certificate of Completion (title pending)",
+    "issuer": "Anthropic Education (from PDF metadata)",
+    "date": "2026-03-23",
+    "certificate_code": "kunf3darvugz",
+    "verification_url": null,
+    "status": "pending_title_confirmation"
+  }
+]

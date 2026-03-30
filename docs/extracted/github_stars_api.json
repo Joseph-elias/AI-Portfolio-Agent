@@ -1,0 +1,122 @@
+﻿[
+    {
+        "full_name":  "NousResearch/hermes-agent",
+        "html_url":  "https://github.com/NousResearch/hermes-agent",
+        "description":  "The agent that grows with you",
+        "stargazers_count":  18308,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T20:20:12Z"
+    },
+    {
+        "full_name":  "luongnv89/claude-howto",
+        "html_url":  "https://github.com/luongnv89/claude-howto",
+        "description":  "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+        "stargazers_count":  9620,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T20:20:01Z"
+    },
+    {
+        "full_name":  "adalca/medical-datasets",
+        "html_url":  "https://github.com/adalca/medical-datasets",
+        "description":  "tracking medical datasets, with a focus on medical imaging",
+        "stargazers_count":  910,
+        "language":  null,
+        "updated_at":  "2026-03-30T10:15:31Z"
+    },
+    {
+        "full_name":  "sunlabuiuc/PyHealth",
+        "html_url":  "https://github.com/sunlabuiuc/PyHealth",
+        "description":  "A Deep Learning Python Toolkit for Healthcare Applications.",
+        "stargazers_count":  1505,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T17:14:07Z"
+    },
+    {
+        "full_name":  "raphaelmansuy/edgequake",
+        "html_url":  "https://github.com/raphaelmansuy/edgequake",
+        "description":  "High-performance GraphRAG inspired from LightRag written in Rust",
+        "stargazers_count":  1547,
+        "language":  "Rust",
+        "updated_at":  "2026-03-30T08:29:54Z"
+    },
+    {
+        "full_name":  "maziyarpanahi/openmed",
+        "html_url":  "https://github.com/maziyarpanahi/openmed",
+        "description":  "open-source healthcare ai",
+        "stargazers_count":  401,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T16:27:31Z"
+    },
+    {
+        "full_name":  "OussamaBouaggad/Quantization",
+        "html_url":  "https://github.com/OussamaBouaggad/Quantization",
+        "description":  "[Frontiers\u002725] Search-Optimized Quantization in Biomedical Ontology Alignment",
+        "stargazers_count":  14,
+        "language":  "Python",
+        "updated_at":  "2025-10-23T01:35:36Z"
+    },
+    {
+        "full_name":  "Shayan5422/Docx_to_latex",
+        "html_url":  "https://github.com/Shayan5422/Docx_to_latex",
+        "description":  null,
+        "stargazers_count":  2,
+        "language":  "TeX",
+        "updated_at":  "2025-07-29T11:24:35Z"
+    },
+    {
+        "full_name":  "AIM-Harvard/pyradiomics",
+        "html_url":  "https://github.com/AIM-Harvard/pyradiomics",
+        "description":  "Open-source python package for the extraction of Radiomics features from 2D and 3D images and binary masks. Support: https://discourse.slicer.org/c/community/radiomics",
+        "stargazers_count":  1401,
+        "language":  "Jupyter Notebook",
+        "updated_at":  "2026-03-24T09:36:33Z"
+    },
+    {
+        "full_name":  "AtsushiSakai/PythonRobotics",
+        "html_url":  "https://github.com/AtsushiSakai/PythonRobotics",
+        "description":  "Python sample codes and textbook for robotics algorithms.",
+        "stargazers_count":  29019,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T16:49:56Z"
+    },
+    {
+        "full_name":  "ayushpai/AI-Basketball-Referee",
+        "html_url":  "https://github.com/ayushpai/AI-Basketball-Referee",
+        "description":  "AI Basketball Referee",
+        "stargazers_count":  352,
+        "language":  "Python",
+        "updated_at":  "2026-03-28T15:53:44Z"
+    },
+    {
+        "full_name":  "mlsedigital/mplbasketball",
+        "html_url":  "https://github.com/mlsedigital/mplbasketball",
+        "description":  "Basketball plotting library for use with matplotlib",
+        "stargazers_count":  85,
+        "language":  "Python",
+        "updated_at":  "2026-03-26T08:18:34Z"
+    },
+    {
+        "full_name":  "Project-MONAI/MONAI",
+        "html_url":  "https://github.com/Project-MONAI/MONAI",
+        "description":  "AI Toolkit for Healthcare Imaging",
+        "stargazers_count":  8032,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T16:55:17Z"
+    },
+    {
+        "full_name":  "fepegar/awesome-medical-imaging",
+        "html_url":  "https://github.com/fepegar/awesome-medical-imaging",
+        "description":  "Awesome list of software that I use to do research in medical imaging.",
+        "stargazers_count":  238,
+        "language":  null,
+        "updated_at":  "2026-03-17T15:55:30Z"
+    },
+    {
+        "full_name":  "chonyy/AI-basketball-analysis",
+        "html_url":  "https://github.com/chonyy/AI-basketball-analysis",
+        "description":  ":basketball::robot::basketball: AI web app and API to analyze basketball shots and shooting pose.",
+        "stargazers_count":  1231,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T12:59:19Z"
+    }
+]

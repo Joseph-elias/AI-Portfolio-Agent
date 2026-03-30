@@ -1,0 +1,13 @@
+﻿<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="20" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#007EA7"/>
+      <stop offset="1" stop-color="#00A8A8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="304" height="304" rx="152" fill="url(#bg)"/>
+  <circle cx="160" cy="128" r="56" fill="#E9F7FF" opacity="0.95"/>
+  <path d="M72 258C84 210 118 186 160 186C202 186 236 210 248 258" fill="#E9F7FF" opacity="0.95"/>
+  <circle cx="260" cy="70" r="26" fill="#0E1B2E"/>
+  <text x="260" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" font-weight="700">JE</text>
+</svg>

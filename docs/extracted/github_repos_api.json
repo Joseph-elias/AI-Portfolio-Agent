@@ -1,0 +1,146 @@
+﻿[
+    {
+        "name":  "Dental-joseph",
+        "html_url":  "https://github.com/Joseph-elias/Dental-joseph",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Jupyter Notebook",
+        "updated_at":  "2026-03-17T15:10:37Z",
+        "private":  false
+    },
+    {
+        "name":  "gaming",
+        "html_url":  "https://github.com/Joseph-elias/gaming",
+        "description":  null,
+        "stargazers_count":  1,
+        "language":  "Python",
+        "updated_at":  "2025-05-28T12:58:28Z",
+        "private":  false
+    },
+    {
+        "name":  "Gym-Membership-Manager",
+        "html_url":  "https://github.com/Joseph-elias/Gym-Membership-Manager",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2025-06-01T19:25:01Z",
+        "private":  false
+    },
+    {
+        "name":  "Joseph-elias",
+        "html_url":  "https://github.com/Joseph-elias/Joseph-elias",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  null,
+        "updated_at":  "2026-03-28T19:38:17Z",
+        "private":  false
+    },
+    {
+        "name":  "LegalChatbot",
+        "html_url":  "https://github.com/Joseph-elias/LegalChatbot",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "TypeScript",
+        "updated_at":  "2025-05-31T10:41:16Z",
+        "private":  false
+    },
+    {
+        "name":  "Llm-Picker-Extension",
+        "html_url":  "https://github.com/Joseph-elias/Llm-Picker-Extension",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2025-06-01T19:23:37Z",
+        "private":  false
+    },
+    {
+        "name":  "Local-RAG",
+        "html_url":  "https://github.com/Joseph-elias/Local-RAG",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2026-02-13T20:23:35Z",
+        "private":  false
+    },
+    {
+        "name":  "MecAgent",
+        "html_url":  "https://github.com/Joseph-elias/MecAgent",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Jupyter Notebook",
+        "updated_at":  "2025-06-23T21:06:53Z",
+        "private":  false
+    },
+    {
+        "name":  "MediNetFusion",
+        "html_url":  "https://github.com/Joseph-elias/MediNetFusion",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Jupyter Notebook",
+        "updated_at":  "2025-06-05T16:27:18Z",
+        "private":  false
+    },
+    {
+        "name":  "Multi-Agent-System-for-Optimization-with-Q-Learning",
+        "html_url":  "https://github.com/Joseph-elias/Multi-Agent-System-for-Optimization-with-Q-Learning",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Jupyter Notebook",
+        "updated_at":  "2025-05-28T11:03:08Z",
+        "private":  false
+    },
+    {
+        "name":  "patient-rag",
+        "html_url":  "https://github.com/Joseph-elias/patient-rag",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2026-02-03T11:36:49Z",
+        "private":  false
+    },
+    {
+        "name":  "Polished-extention",
+        "html_url":  "https://github.com/Joseph-elias/Polished-extention",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2026-03-30T09:42:05Z",
+        "private":  false
+    },
+    {
+        "name":  "Portfolio-joseph",
+        "html_url":  "https://github.com/Joseph-elias/Portfolio-joseph",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "HTML",
+        "updated_at":  "2026-03-28T20:58:37Z",
+        "private":  false
+    },
+    {
+        "name":  "Queens-automation",
+        "html_url":  "https://github.com/Joseph-elias/Queens-automation",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2026-02-22T10:54:49Z",
+        "private":  false
+    },
+    {
+        "name":  "ReproPilot",
+        "html_url":  "https://github.com/Joseph-elias/ReproPilot",
+        "description":  null,
+        "stargazers_count":  0,
+        "language":  "Python",
+        "updated_at":  "2026-02-22T17:39:17Z",
+        "private":  false
+    },
+    {
+        "name":  "smart-study-companion",
+        "html_url":  "https://github.com/Joseph-elias/smart-study-companion",
+        "description":  "Chrome extension + AI backend for a smart study companion (procrastination detection + flashcards + tutor)",
+        "stargazers_count":  0,
+        "language":  "JavaScript",
+        "updated_at":  "2026-01-13T15:15:25Z",
+        "private":  false
+    }
+]

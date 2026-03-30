@@ -1,0 +1,63 @@
+Joseph Elias Al Khoury  Artificial Intelligence Engineer
+josepheliaskh@gmail.com +33 7 44849533 Poissy, France 
+linkedin.com/in/joseph-elias-al-khoury-0a54a8239/ github.com/Joseph-elias 
+https://joseph-elias.github.io/Portfolio-joseph/ 
+Profile
+AI Engineer with experience in data science, machine learning, and Python development. I design and deploy models for heterogeneous 
+data, including images, text, time series, and tabular datasets, and build robust, reproducible pipelines using tools such as Docker and 
+Git.Interested in applying AI across diverse domains, with a focus on solving complex real-world problems through scalable and efficient 
+machine learning systems. Seeking AI/ ML roles in innovative and interdisciplinary environments.
+Professional Experience
+AI Engineer & Co-founder, SISSI (AI-powered executive assistant, SaaS)
+• Designed LLM pipelines for automatic note structuring (summarization, extraction, prioritization)
+• Implemented a semantic search system (embeddings, pgvector)01/2026 – Present
+France
+• Developed an ingestion and enrichment pipeline (raw data → embeddings → insights)
+• Integrated AI modules into a React /  Django REST /  Supabase architecture
+Masterʼs (M2) apprenticeship: Data Scientist in Medical Imaging, Institut Curie (U1288 Inserm)
+•Designed and trained a survival prediction model for lung cancer using multimodal data, analyzing 180+ 
+patients (MRI/ PET/ clinical).
+•Discovered, defined, and validated new radiomic features, now integrated into LIFEx (open-source 
+radiomics software).09/2024 – 09/2025
+Orsay, France
+•Scientific manuscript currently in preparation.
+Masterʼs (M1) internship in Artificial Intelligence, Institut Curie (U1288 Inserm)
+•Rebuilt and optimized a radiomics extraction pipeline on brain MRI (hWS standardization, FLIRT 
+registration, N4ITK correction).
+•Reduced execution time through multi-CPU parallelization and pipeline restructuring (40% runtime 
+reduction).03/2024 – 08/2024
+Orsay, France
+•Developed a Docker image ensuring standardized, portable, and reproducible execution across the 
+laboratory.
+•Developed predictive models for genomic mutations (H3.3, TP53).
+Academic Projects
+Multimodal time-series classification (CNN, LSTM, XGBoost)
+Developed an early prediction system for type 2 diabetes using multivariate temporal data (77 biomarkers 
+over 12 months).02/2025 – 03/2025
+Lebanese Legal Chatbot (RAG, SBERT, Gemini, FastAPI, React)
+Developed an intelligent legal assistant capable of answering Lebanese law questions in Arabic using a RAG 
+architecture.11/2024 – 01/2025
+Analysis and optimization of the Adult Emergency Department (SUA) logistics chain – Lille University 
+Hospital
+Optimized patient flow in the adult emergency department at Lille University Hospital (real-world data, 
+scheduling, prediction, MAS, IoT).09/2023 – 03/2024
+Education
+Masterʼs in Engineering –Artificial Intelligence in Healthcare – High Honors (16/20)
+Program completed jointly at École Centrale de Lille and the University of Lille.09/2023 – 09/2025
+Lille, France
+Bachelorʼs degree in Biomedical Engineering, Lebanese International University (LIU) – High Honors
+Compétences en électronique, microcontrôleurs, traitement des signaux, systèmes électromécaniques et 
+robotique appliquée au médical.01/2020 – 06/2023
+Koura, Lebanon
+Skills
+MLOps & Deployment: FastAPI, Docker, Streamlit, Gradio, Elasticsearch (vector-based retrieval), Git, Linux shell, MLflow
+Data & Experimentation: Data preprocessing, Feature engineering, Model evaluation, Hyperparameter tuning, Benchmarking,
+Reproducibility studies, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, Spark, Power BI, Data fusion, Medical imaging, Optimization
+algorithms
+Programming Languages: Python, Java, C, SystemVerilog, MATLAB, R, SQL
+Machine Learning & AI Methods: Supervised & unsupervised learning, Regression & classification, Retrieval-Augmented Generation
+(RAG), LLMs & prompt engineering, Large-scale data analysis, NLP, Deep learning (PyTorch, TensorFlow), Ontologies, Fuzzy logic
+Software & Tools: Visual Studio Code, LabView, GitHub, GitLab, SPARQL, HTML, CSS, SysML/UML
+Languages
+Arabic (Native) English (C1) French (C1)
+Joseph Elias Al Khoury josepheliaskh@gmail.com

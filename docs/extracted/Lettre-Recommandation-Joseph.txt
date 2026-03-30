@@ -1,0 +1,52 @@
+Laboratoire d’Imagerie Translationnelle en Oncologie (LITO )  - U1288 Inserm  - Centre de Recherche de l’Institut Curie 
+– Bâtiment 101B – rue Henri Becquerel  – CS 90030  - 91401 O rsay Cedex 
+Tél. : +33 6 33 67 79 65   frederique.frouin @inserm.fr  
+ 
+  
+      
+ 
+  
+Objet  : Lettre de recommandation  
+ 
+ 
+        
+ 
+   Orsay, le 16  janvier 202 6 
+  
+ 
+Madame, Monsieur , 
+ 
+En tant que responsable d’équipe  au sein du Laboratoire d’Imagerie Translationnelle en 
+Oncologie (LITO), unité Inserm intégrée au Centre de Recherche de l’Institut Curie, j’ai eu l’occasion de suivre Joseph Elias Al Khoury,  tout d’abord pour son stage de M1, puis pour son 
+parcours de M2 , qu’il a réalisé  en tant apprenti.  
+ 
+Grâce à sa formation à l’Ecole Centrale de Lille , Jopeph Elias Al Khoury dispose de solides 
+connaissances en développement logiciel  et en analyse de données  biomédicales . Il a acquis 
+de nouvelles  compétences en imagerie médicale  et notamment en analyse d’ images 
+médicales  (prétraitements  pour harmonisation, radiomique, apprentissage profond ) grâce aux 
+deux stages qu’il a réalisés au sein du laboratoire  dont l es objectifs étaient  : 1) prédiction de 
+la survie chez des enfants atteints de gliome infiltrants du tronc cérébral avec des IRM 
+cérébrale s multi -modales  (stage de M1);  prédiction du sous- type histologique des cancers  du 
+poumon avec des données IRM pulmonaire multimodales et des données  TEP/TDM (travail 
+de M2). 
+ Joseph Elias Al Khoury  s’est montré extrêmement  volontaire et  travailleur. Il est autonome 
+mais sait solliciter son responsable en cas de nécessité. Il est capable de s’adapter à différents 
+contextes, puisqu’il a travaillé sur deux sujets différents  en réutilisant et en améliorant les 
+pipelines d’analyse déjà développés au laboratoire sur ces deux thématiques . Les résultats 
+qu’il a obtenus sur son projet de M2 ont conduit à la rédaction de deux abstracts qui viennent 
+d’être acceptés pour présentation au Congrès Européen de Radiologie  (ECR)  en mars 2026 . 
+Une publication est en cours de rédaction. Le travail de codage (Python , Docker ) qu’il a réalisé 
+est efficace et a pu être réutilisé ultérieurement.   
+ 
+Enfin je me permets d’ajouter qu’ il est extrêmement agréable de travailler avec Joseph Elias 
+Al Khoury , qui est quelqu’un de sérieux. Il  est très investi dans ses missions et on peut compter 
+sur lui dans une équipe.  
+ 
+Pour toutes ces raisons, je recommande vivement sa candidature à un poste d ’ingénieur a u 
+sein de votre structure  et je me tiens à votre disposition pour tout renseignement 
+complémentaire que vous souhaiteriez obtenir.  
+ 
+Bien cordialement  
+ 
+Frédérique Frouin, Chercheuse Inserm  
+Responsable de l’équipe Radiomique

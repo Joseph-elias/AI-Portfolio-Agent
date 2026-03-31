@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import re
 
-from app.core.config import FORCE_LLM_CHAT, OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
-from app.core.prompts import ABOUT_ME_SYSTEM_PROMPT, JOB_FIT_SYSTEM_PROMPT
-from app.services.profile_loader import ProfileLoader
+from ..core.config import FORCE_LLM_CHAT, OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
+from ..core.prompts import ABOUT_ME_SYSTEM_PROMPT, JOB_FIT_SYSTEM_PROMPT
+from .profile_loader import ProfileLoader
 
 try:
     from openai import OpenAI

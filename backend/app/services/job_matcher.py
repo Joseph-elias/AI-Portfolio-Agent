@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import re
 
-from app.services.profile_loader import ProfileLoader
+from .profile_loader import ProfileLoader
 
 
 KNOWN_SKILLS = {

@@ -1,9 +1,9 @@
 ﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes.chat import router as chat_router
-from app.routes.job_fit import router as job_fit_router
-from app.routes.summary import router as summary_router
+from .routes.chat import router as chat_router
+from .routes.job_fit import router as job_fit_router
+from .routes.summary import router as summary_router
 
 
 app = FastAPI(title="AI Portfolio Agent API", version="0.1.0")

@@ -1,7 +1,7 @@
 ﻿import json
 from pathlib import Path
 
-from app.core.config import RAW_DATA_DIR, STRUCTURED_DATA_DIR
+from ..core.config import RAW_DATA_DIR, STRUCTURED_DATA_DIR
 
 
 class ProfileLoader:

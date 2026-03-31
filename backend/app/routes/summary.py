@@ -1,7 +1,7 @@
 ﻿from fastapi import APIRouter
 
-from app.models.schemas import ProfileSummaryResponse
-from app.services.profile_loader import ProfileLoader
+from ..models.schemas import ProfileSummaryResponse
+from ..services.profile_loader import ProfileLoader
 
 router = APIRouter()
 loader = ProfileLoader()

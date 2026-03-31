@@ -5,8 +5,8 @@ import math
 import re
 from dataclasses import dataclass
 
-from app.core.config import OPENAI_API_KEY, OPENAI_EMBEDDING_MODEL, TOP_K, USE_OPENAI, VECTOR_STORE_DIR
-from app.services.profile_loader import ProfileLoader
+from ..core.config import OPENAI_API_KEY, OPENAI_EMBEDDING_MODEL, TOP_K, USE_OPENAI, VECTOR_STORE_DIR
+from .profile_loader import ProfileLoader
 
 try:
     from openai import OpenAI

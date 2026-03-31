@@ -4,14 +4,14 @@ from dataclasses import dataclass
 
 from fastapi import APIRouter
 
-from app.models.schemas import ChatRequest, ChatResponse
-from app.services.citation_builder import build_sources
-from app.services.consistency_engine import ConsistencyEngine
-from app.core.config import FORCE_LLM_CHAT
-from app.services.language import detect_language
-from app.services.llm import ResponseComposer
-from app.services.llm_judge import LLMJudge
-from app.services.retrieval import RetrievedChunk, RetrievalService
+from ..models.schemas import ChatRequest, ChatResponse
+from ..services.citation_builder import build_sources
+from ..services.consistency_engine import ConsistencyEngine
+from ..core.config import FORCE_LLM_CHAT
+from ..services.language import detect_language
+from ..services.llm import ResponseComposer
+from ..services.llm_judge import LLMJudge
+from ..services.retrieval import RetrievedChunk, RetrievalService
 
 router = APIRouter()
 retrieval = RetrievalService()

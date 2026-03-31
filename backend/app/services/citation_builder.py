@@ -1,5 +1,5 @@
-﻿from app.models.schemas import SourceItem
-from app.services.retrieval import RetrievedChunk
+﻿from ..models.schemas import SourceItem
+from .retrieval import RetrievedChunk
 
 
 def build_sources(chunks: list[RetrievedChunk]) -> list[SourceItem]:

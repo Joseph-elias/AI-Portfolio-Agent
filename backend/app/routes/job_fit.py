@@ -1,12 +1,12 @@
 from fastapi import APIRouter
 
-from app.models.schemas import JobFitRequest, JobFitResponse
-from app.services.citation_builder import build_sources
-from app.services.fit_scorer import FitScorer
-from app.services.job_matcher import JobMatcher
-from app.services.language import detect_language
-from app.services.llm import ResponseComposer
-from app.services.retrieval import RetrievalService
+from ..models.schemas import JobFitRequest, JobFitResponse
+from ..services.citation_builder import build_sources
+from ..services.fit_scorer import FitScorer
+from ..services.job_matcher import JobMatcher
+from ..services.language import detect_language
+from ..services.llm import ResponseComposer
+from ..services.retrieval import RetrievalService
 
 router = APIRouter()
 matcher = JobMatcher()

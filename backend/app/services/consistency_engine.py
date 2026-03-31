@@ -5,8 +5,8 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from app.core.config import STRUCTURED_DATA_DIR
-from app.services.profile_loader import ProfileLoader
+from ..core.config import STRUCTURED_DATA_DIR
+from .profile_loader import ProfileLoader
 
 
 @dataclass

@@ -1,4 +1,4 @@
-﻿from app.services.job_matcher import JobMatchResult
+﻿from .job_matcher import JobMatchResult
 
 
 class FitScorer:

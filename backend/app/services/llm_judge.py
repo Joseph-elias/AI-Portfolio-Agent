@@ -4,7 +4,7 @@ import json
 import re
 from dataclasses import dataclass
 
-from app.core.config import ENABLE_LLM_JUDGE, OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
+from ..core.config import ENABLE_LLM_JUDGE, OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
 
 try:
     from openai import OpenAI

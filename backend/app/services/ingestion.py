@@ -1,4 +1,4 @@
-﻿from app.services.retrieval import RetrievalService
+﻿from .retrieval import RetrievalService
 
 
 def build_index() -> int:

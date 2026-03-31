@@ -88,6 +88,15 @@ class ConsistencyEngine:
             required = cfg.get("required_keywords_en", []) if isinstance(cfg, dict) else []
             return IntentPlan(intent="target_roles", normalized_message=m, required_keywords_en=list(required))
 
+        # Hire intent in English/French should be detected explicitly.
+        if (
+            ("pourquoi" in m and ("recrut" in m or "embauch" in m))
+            or any(x in m for x in ["why should we hire", "why hire", "why should i hire", "convince me to hire", "strong hire", "good fit"])
+        ):
+            cfg = intents.get("hire", {}) if isinstance(intents, dict) else {}
+            required = cfg.get("required_keywords_en", []) if isinstance(cfg, dict) else []
+            return IntentPlan(intent="hire", normalized_message=m, required_keywords_en=list(required))
+
         # Contract preference should win when user asks targeting/looking-for questions.
         if (
             ("looking for" in m or "target" in m or "preference" in m)

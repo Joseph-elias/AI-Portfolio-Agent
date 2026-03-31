@@ -142,7 +142,13 @@
         "strong hire",
         "good fit",
         "convince me to hire",
-        "product team hire"
+        "product team hire",
+        "pourquoi te recruter",
+        "pourquoi vous recruter",
+        "pourquoi devrions nous vous recruter",
+        "pourquoi devrions-nous vous recruter",
+        "pourquoi vous embaucher",
+        "pourquoi te embaucher"
       ],
       "required_keywords_en": [
         "deployable",

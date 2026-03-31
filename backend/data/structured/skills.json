@@ -318,7 +318,19 @@
     "AWS SageMaker",
     "MySQL",
     "SQLite",
-    "SQL Server"
+    "SQL Server",
+    "Communication",
+    "Teamwork",
+    "Problem Solving",
+    "Critical Thinking",
+    "Adaptability",
+    "Ownership",
+    "Leadership",
+    "Stakeholder Management",
+    "Time Management",
+    "Collaboration",
+    "Product Thinking",
+    "Fast Learner"
   ],
   "database": [
     "PostgreSQL",
@@ -331,5 +343,19 @@
     "NoSQL",
     "Vector Databases",
     "pgvector"
+  ],
+  "soft_skills": [
+    "Communication",
+    "Teamwork",
+    "Problem Solving",
+    "Critical Thinking",
+    "Adaptability",
+    "Ownership",
+    "Leadership",
+    "Stakeholder Management",
+    "Time Management",
+    "Collaboration",
+    "Product Thinking",
+    "Fast Learner"
   ]
 }

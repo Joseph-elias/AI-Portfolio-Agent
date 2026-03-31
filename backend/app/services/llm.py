@@ -770,15 +770,51 @@ class ResponseComposer:
         if not self.enabled:
             if language == "fr":
                 return (
-                    f"Joseph montre un fit {fit_label} ({score}/100). "
-                    f"Competences alignees: {', '.join(matched) if matched else 'aucune explicite'}. "
-                    f"Points a renforcer: {', '.join(missing) if missing else 'pas de manque critique detecte'}."
+                    f"Verdict: {fit_label} ({score}/100).\n"
+                    "Evidence from real experience:\n"
+                    f"- Projets pertinents: {', '.join(relevant_projects) if relevant_projects else 'Projets a preciser selon le role'}.\n"
+                    "- Parcours ancre entre SISSI (LLM/retrieval/production) et Institut Curie (IA medicale).\n"
+                    "Skill alignment:\n"
+                    f"- Competences alignees: {', '.join(matched) if matched else 'aucune explicite'}\n"
+                    "Gaps / risks:\n"
+                    f"- {', '.join(missing) if missing else 'Pas de manque critique detecte'}\n"
+                    "Positioning advice:\n"
+                    "- Mettre en avant les projets les plus proches du domaine du poste.\n"
+                    "- Relier chaque competence cle a un resultat concret en production."
                 )
             return (
-                f"Joseph looks like a {fit_label} ({score}/100). "
-                f"Matched skills: {', '.join(matched) if matched else 'no explicit match found'}. "
-                f"Gaps to address: {', '.join(missing) if missing else 'no critical gap detected'}."
+                f"Verdict: {fit_label} ({score}/100).\n"
+                "Evidence from real experience:\n"
+                f"- Relevant projects: {', '.join(relevant_projects) if relevant_projects else 'Project examples should be tailored to the role'}.\n"
+                "- Experience anchored in both SISSI (LLM/retrieval/production) and Institut Curie (medical AI).\n"
+                "Skill alignment:\n"
+                f"- Matched skills: {', '.join(matched) if matched else 'no explicit match found'}\n"
+                "Gaps / risks:\n"
+                f"- {', '.join(missing) if missing else 'No critical gap detected'}\n"
+                "Positioning advice:\n"
+                "- Highlight the projects closest to the target domain.\n"
+                "- Tie each key skill to a concrete production outcome."
             )
+
+        structure_rules = (
+            "Return plain text with this exact structure and line breaks: \\n"
+            "Verdict: <1 sentence>\\n"
+            "Evidence from real experience:\\n"
+            "- <bullet 1>\\n"
+            "- <bullet 2>\\n"
+            "Skill alignment:\\n"
+            "- <bullet>\\n"
+            "Gaps / risks:\\n"
+            "- <bullet or 'None significant'>\\n"
+            "Positioning advice:\\n"
+            "- <bullet 1>\\n"
+            "- <bullet 2>"
+        )
+
+        grounding_rules = (
+            "Ground every claim in provided evidence. Mention at least two concrete entities when supported (for example: SISSI, Institut Curie, LIFEx, MediNetFusion, LegalChatbot, Patient-RAG, Polished AI). "
+            "Do not use exaggerated claims like perfect/perfectly/ideal. Keep under 170 words."
+        )
 
         user_prompt = (
             f"Language: {language}\n"
@@ -789,7 +825,8 @@ class ResponseComposer:
             f"Relevant projects: {relevant_projects}\n\n"
             "Evidence:\n"
             f"{sources_context}\n\n"
-            "Write a concise, natural recruiter-facing summary with clean structure and short bullet points."
+            f"Format rules:\n{structure_rules}\n\n"
+            f"Grounding rules:\n{grounding_rules}"
         )
 
         try:
@@ -809,14 +846,30 @@ class ResponseComposer:
 
         if language == "fr":
             return (
-                f"Joseph montre un fit {fit_label} ({score}/100). "
-                f"Competences alignees: {', '.join(matched) if matched else 'aucune explicite'}. "
-                f"Points a renforcer: {', '.join(missing) if missing else 'pas de manque critique detecte'}."
+                f"Verdict: {fit_label} ({score}/100).\n"
+                "Evidence from real experience:\n"
+                f"- Projets pertinents: {', '.join(relevant_projects) if relevant_projects else 'Projets a preciser selon le role'}.\n"
+                "- Parcours ancre entre SISSI (LLM/retrieval/production) et Institut Curie (IA medicale).\n"
+                "Skill alignment:\n"
+                f"- Competences alignees: {', '.join(matched) if matched else 'aucune explicite'}\n"
+                "Gaps / risks:\n"
+                f"- {', '.join(missing) if missing else 'Pas de manque critique detecte'}\n"
+                "Positioning advice:\n"
+                "- Mettre en avant les projets les plus proches du domaine du poste.\n"
+                "- Relier chaque competence cle a un resultat concret en production."
             )
         return (
-            f"Joseph looks like a {fit_label} ({score}/100). "
-            f"Matched skills: {', '.join(matched) if matched else 'no explicit match found'}. "
-            f"Gaps to address: {', '.join(missing) if missing else 'no critical gap detected'}."
+            f"Verdict: {fit_label} ({score}/100).\n"
+            "Evidence from real experience:\n"
+            f"- Relevant projects: {', '.join(relevant_projects) if relevant_projects else 'Project examples should be tailored to the role'}.\n"
+            "- Experience anchored in both SISSI (LLM/retrieval/production) and Institut Curie (medical AI).\n"
+            "Skill alignment:\n"
+            f"- Matched skills: {', '.join(matched) if matched else 'no explicit match found'}\n"
+            "Gaps / risks:\n"
+            f"- {', '.join(missing) if missing else 'No critical gap detected'}\n"
+            "Positioning advice:\n"
+            "- Highlight the projects closest to the target domain.\n"
+            "- Tie each key skill to a concrete production outcome."
         )
 
 

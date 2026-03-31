@@ -89,7 +89,7 @@ export default function JobFitPage() {
               <p className="code-chip text-[11px] uppercase tracking-[0.28em] text-[var(--muted)]/80">
                 {language === "fr" ? "synthese" : "summary"}
               </p>
-              <p className="mt-4 text-sm leading-7 text-[var(--muted)]">{result.summary}</p>
+              <p className="mt-4 whitespace-pre-line text-sm leading-7 text-[var(--muted)]">{result.summary}</p>
               <div className="aurora-divider my-5" />
               <div className="grid gap-4 md:grid-cols-3">
                 <div>

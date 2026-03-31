@@ -10,14 +10,14 @@ const links = {
     { label: "Resume (EN)", href: "/resume_en.pdf" },
     { label: "Resume (FR)", href: "/resume_fr.pdf" },
     { label: "GitHub", href: "https://github.com/joseph-elias" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/joseph-elias-al-khoury-0a54a8239/" },
     { label: "Technical portfolio", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
   ],
   fr: [
     { label: "CV (anglais)", href: "/resume_en.pdf" },
     { label: "CV (francais)", href: "/resume_fr.pdf" },
     { label: "GitHub", href: "https://github.com/joseph-elias" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/joseph-elias-al-khoury-0a54a8239/" },
     { label: "Portfolio technique", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
   ]
 } as const;

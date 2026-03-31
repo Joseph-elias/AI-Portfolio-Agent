@@ -10,28 +10,27 @@ export default function ChatPage() {
   const { language, setLanguage } = useAppLanguage("en");
 
   return (
-    <main className="mx-auto max-w-6xl space-y-6 p-6 md:p-10">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <BrandIdentity compact language={language} />
+    <main className="app-shell mx-auto max-w-6xl px-5 py-6 md:px-8 md:py-10">
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <BrandIdentity compact language={language} />
+        <div className="flex flex-wrap items-center gap-3">
           <LanguageToggle language={language} setLanguage={setLanguage} />
+          <Link href={withLanguage("/", language)} className="pill-button pill-secondary code-chip text-xs uppercase tracking-[0.22em]">
+            {language === "fr" ? "Retour accueil" : "Back home"}
+          </Link>
         </div>
-        <Link href={withLanguage("/", language)} className="code-chip rounded-lg border border-ink/25 bg-white px-3 py-2 text-xs uppercase tracking-wide">
-          {language === "fr" ? "Retour accueil" : "Back Home"}
-        </Link>
       </div>
 
-      <section className="tech-panel rounded-2xl p-5 md:p-6">
-        <p className="code-chip mb-2 text-xs uppercase tracking-[0.2em] text-ink/60">mode_01</p>
-        <h1 className="text-3xl font-bold md:text-4xl">{language === "fr" ? "Chat avec Joseph" : "Chat with Joseph"}</h1>
-        <p className="mt-2 text-sm text-ink/75">
-          {language === "fr"
-            ? "Experience conversationnelle: posez vos questions comme dans une vraie discussion."
-            : "Conversational experience: ask questions as if you were talking directly with me."}
-        </p>
+      <section className="section-shell hero-shell mt-6 p-6 md:p-8">
+        <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">flow_01</p>
+        <h1 className="display-title mt-4 text-4xl font-semibold md:text-6xl">
+          {language === "fr" ? "Conversation" : "Conversation"} <span className="gradient-text">studio</span>
+        </h1>
       </section>
 
-      <ChatBox language={language} />
+      <div className="mt-6">
+        <ChatBox language={language} />
+      </div>
     </main>
   );
 }

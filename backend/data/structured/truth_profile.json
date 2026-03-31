@@ -1,0 +1,83 @@
+{
+  "identity": {
+    "name": "Joseph Elias Al Khoury",
+    "title": "AI Engineer",
+    "languages": [
+      "English",
+      "French",
+      "Arabic"
+    ]
+  },
+  "contract_preference": {
+    "target_contracts": [
+      "CDI",
+      "CDD"
+    ],
+    "not_targeting": [
+      "internship contracts"
+    ]
+  },
+  "roles": [
+    {
+      "title": "AI Engineer & Co-founder",
+      "company": "SISSI",
+      "start": "2026-01",
+      "end": "present",
+      "highlights": [
+        "Built LLM pipelines for note structuring",
+        "Implemented semantic retrieval with embeddings and pgvector",
+        "Integrated AI modules in React, Django REST, Supabase SaaS architecture"
+      ]
+    },
+    {
+      "title": "Data Scientist in Medical Imaging (M2 alternance)",
+      "company": "Institut Curie (U1288 Inserm)",
+      "start": "2024-09",
+      "end": "2025-09",
+      "highlights": [
+        "Built multimodal lung-cancer survival model on 180+ patients",
+        "Discovered and validated radiomic features integrated into LIFEx",
+        "Contributed to scientific manuscript in progress"
+      ]
+    },
+    {
+      "title": "M1 AI Intern",
+      "company": "Institut Curie (U1288 Inserm)",
+      "start": "2024-03",
+      "end": "2024-08",
+      "highlights": [
+        "Optimized radiomics extraction pipeline",
+        "Reduced runtime by around 40% via multi-CPU parallelization",
+        "Containerized reproducible workflow with Docker"
+      ]
+    }
+  ],
+  "education": {
+    "master": {
+      "degree": "Master in Engineering of Health (AI in Health track)",
+      "schools": [
+        "Ecole Centrale de Lille",
+        "Universite de Lille"
+      ],
+      "mention": "Tres Bien"
+    },
+    "bachelor": {
+      "degree": "Bachelor in Biomedical Engineering",
+      "school": "Lebanese International University (LIU)",
+      "mention": "Tres Bien"
+    }
+  },
+  "publications": {
+    "status": "in_progress",
+    "summary": "Scientific manuscript in progress from Institut Curie work on lung-cancer survival modeling and radiomic features integrated into LIFEx."
+  },
+  "skills_policy": {
+    "default_gap_style": "diplomatic",
+    "always_add_fast_learner": true
+  },
+  "target_roles": [
+    "AI Engineer",
+    "Applied AI Engineer",
+    "LLM Engineer"
+  ]
+}

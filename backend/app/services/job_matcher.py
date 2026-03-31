@@ -1,4 +1,5 @@
-﻿from dataclasses import dataclass
+from dataclasses import dataclass
+import re
 
 from app.services.profile_loader import ProfileLoader
 
@@ -42,9 +43,25 @@ class JobMatcher:
                 all_values.extend(value)
         return {v.lower() for v in all_values}
 
+    def _known_skill_set(self) -> set[str]:
+        # Keep static aliases, but prioritize dynamically loaded profile skills.
+        return self._candidate_skill_set().union(KNOWN_SKILLS)
+
+    @staticmethod
+    def _skill_mentioned(lowered_jd: str, skill: str) -> bool:
+        # Use strict boundaries for short/common tokens to avoid false positives.
+        if len(skill) <= 2 and skill.isalpha():
+            return bool(re.search(rf"\b{re.escape(skill)}\b", lowered_jd))
+
+        # For common word-like skills, prefer boundary matching.
+        if re.fullmatch(r"[a-z0-9._+-]+", skill):
+            return bool(re.search(rf"(?<![a-z0-9]){re.escape(skill)}(?![a-z0-9])", lowered_jd))
+
+        return skill in lowered_jd
+
     def extract_required_skills(self, jd: str) -> list[str]:
         lowered = jd.lower()
-        found = [s for s in KNOWN_SKILLS if s in lowered]
+        found = [s for s in self._known_skill_set() if self._skill_mentioned(lowered, s)]
         return sorted(set(found))
 
     def relevant_projects(self, matched_skills: list[str]) -> list[str]:

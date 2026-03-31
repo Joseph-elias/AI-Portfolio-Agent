@@ -1,0 +1,206 @@
+{
+  "synonyms": {
+    "knowledge graph": [
+      "knowledge graphs",
+      "kg",
+      "graph database",
+      "neo4j"
+    ],
+    "langchain": [
+      "lang chain"
+    ],
+    "model context protocol": [
+      "mcp"
+    ],
+    "internship": [
+      "stage",
+      "apprenticeship",
+      "alternance"
+    ],
+    "contract": [
+      "contract type",
+      "type of contract",
+      "cdi",
+      "cdd",
+      "full-time",
+      "permanent"
+    ]
+  },
+  "intents": {
+    "self_intro": {
+      "triggers": [
+        "present yourself",
+        "introduce yourself",
+        "tell me about yourself",
+        "who are you",
+        "profile summary",
+        "present your profile",
+        "candidate summary",
+        "about your profile",
+        "30-second intro",
+        "30 second intro",
+        "30s intro",
+        "30 sec intro",
+        "quick intro"
+      ],
+      "required_keywords_en": [
+        "ai engineer",
+        "sissi",
+        "institut curie"
+      ]
+    },
+    "experience": {
+      "triggers": [
+        "professional experience",
+        "work experience",
+        "worked before",
+        "roles",
+        "positions",
+        "job history",
+        "career history",
+        "experience timeline",
+        "work history",
+        "work before",
+        "did you work before"
+      ],
+      "required_keywords_en": [
+        "sissi",
+        "institut curie"
+      ]
+    },
+    "internship_experience": {
+      "triggers": [
+        "internship",
+        "alternance",
+        "stage",
+        "apprenticeship"
+      ],
+      "required_keywords_en": [
+        "m1",
+        "m2",
+        "institut curie"
+      ]
+    },
+    "contract": {
+      "triggers": [
+        "contract",
+        "cdi",
+        "cdd",
+        "full-time",
+        "permanent"
+      ],
+      "required_keywords_en": [
+        "cdi",
+        "cdd"
+      ]
+    },
+    "education": {
+      "triggers": [
+        "education",
+        "bachelor",
+        "master",
+        "degree",
+        "studies"
+      ],
+      "required_keywords_en": [
+        "master",
+        "bachelor"
+      ]
+    },
+    "publications": {
+      "triggers": [
+        "publication",
+        "paper",
+        "manuscript",
+        "article"
+      ],
+      "required_keywords_en": [
+        "manuscript",
+        "in progress",
+        "lifex"
+      ]
+    },
+    "skills": {
+      "triggers": [
+        "experience with",
+        "do you have",
+        "used",
+        "familiar with",
+        "knowledge in",
+        "do you know",
+        "have you used",
+        "any experience in"
+      ],
+      "required_keywords_en": []
+    },
+    "hire": {
+      "triggers": [
+        "why should we hire",
+        "why hire",
+        "why should i hire",
+        "hiring value proposition",
+        "strong hire",
+        "good fit",
+        "convince me to hire",
+        "product team hire"
+      ],
+      "required_keywords_en": [
+        "deployable",
+        "product",
+        "backend"
+      ]
+    },
+    "target_roles": {
+      "triggers": [
+        "what positions are you searching for",
+        "what positions are you looking for",
+        "which positions are you targeting",
+        "what roles are you searching for",
+        "what roles are you looking for",
+        "target roles",
+        "role targets",
+        "positions are you searching for"
+      ],
+      "required_keywords_en": [
+        "ai engineer"
+      ]
+    },
+    "languages": {
+      "triggers": [
+        "bilingual",
+        "which language can you work in",
+        "what languages do you speak",
+        "languages can you work in",
+        "language proficiency"
+      ],
+      "required_keywords_en": [
+        "english",
+        "french"
+      ]
+    },
+    "gap_handling": {
+      "triggers": [
+        "skills you do not have",
+        "skills you don't have",
+        "handle missing skills",
+        "if you don't know a tool"
+      ],
+      "required_keywords_en": [
+        "fast learner"
+      ]
+    },
+    "gap_plan": {
+      "triggers": [
+        "30-day plan",
+        "30 day plan",
+        "week 1",
+        "ramp plan",
+        "if you do not know a tool"
+      ],
+      "required_keywords_en": [
+        "30-day",
+        "week 1"
+      ]
+    }
+  }
+}

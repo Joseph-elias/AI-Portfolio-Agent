@@ -7,68 +7,94 @@ import { useAppLanguage, withLanguage } from "@/lib/language";
 
 const copy = {
   en: {
-    subtitle: "Talk with me through a bilingual AI profile assistant built for recruiters.",
-    badges: ["Bilingual RAG", "Source-Cited", "Recruiter Mode"],
-    askTitle: "Chat With Joseph",
-    askText: "Conversational assistant backed by your real portfolio data.",
-    fitTitle: "Analyze a Job",
-    fitText: "Fit score, strengths, gaps, and positioning suggestions.",
-    aboutTitle: "Links and Profile",
-    aboutText: "Resume, GitHub, LinkedIn, and contact details."
+    eyebrow: "AI portfolio experience",
+    askTitle: "Chat the profile",
+    askText: "Start a conversation around projects, strengths, and technical decisions.",
+    fitTitle: "Read a job fit",
+    fitText: "Paste a role and get a precise fit analysis with strengths and gaps.",
+    aboutTitle: "Open the profile",
+    aboutText: "Browse links, resume access, and the key signals a recruiter needs fast.",
+    heroStatA: "AI + product thinking",
+    heroStatB: "Backend and RAG depth",
+    heroStatC: "Bilingual recruiter flow"
   },
   fr: {
-    subtitle: "Discutez avec moi via un assistant IA bilingue concu pour les recruteurs.",
-    badges: ["RAG Bilingue", "Reponses Sourcees", "Mode Recruteur"],
-    askTitle: "Discuter avec Joseph",
-    askText: "Assistant conversationnel base sur les vraies donnees du portfolio.",
-    fitTitle: "Analyser une offre",
-    fitText: "Score de fit, points forts, ecarts et recommandations.",
-    aboutTitle: "Liens et profil",
-    aboutText: "CV, GitHub, LinkedIn et informations de contact."
+    eyebrow: "experience portfolio IA",
+    askTitle: "Discuter avec le profil",
+    askText: "Lancer une conversation sur les projets, les points forts et les choix techniques.",
+    fitTitle: "Lire un job fit",
+    fitText: "Coller une offre et obtenir une analyse precise avec points forts et ecarts.",
+    aboutTitle: "Ouvrir le profil",
+    aboutText: "Parcourir les liens, les CV et les signaux clefs pour recruteurs.",
+    heroStatA: "IA + vision produit",
+    heroStatB: "Profondeur backend et RAG",
+    heroStatC: "Parcours bilingue recruteur"
   }
 } as const;
+
+const cardShapes = ["blob-card", "blob-card-alt", "blob-card"];
 
 export default function HomePage() {
   const { language, setLanguage } = useAppLanguage("en");
   const t = copy[language];
 
+  const cards = [
+    { href: withLanguage("/chat", language), title: t.askTitle, text: t.askText, mode: "flow_01" },
+    { href: withLanguage("/job-fit", language), title: t.fitTitle, text: t.fitText, mode: "flow_02" },
+    { href: withLanguage("/about", language), title: t.aboutTitle, text: t.aboutText, mode: "flow_03" }
+  ];
+
   return (
-    <main className="relative mx-auto max-w-6xl p-6 md:p-10">
-      <header className="tech-panel mb-8 rounded-2xl p-6 md:p-8">
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-4">
-            <BrandIdentity language={language} />
-            <LanguageToggle language={language} setLanguage={setLanguage} />
+    <main className="app-shell mx-auto max-w-6xl px-5 py-6 md:px-8 md:py-10">
+      <section className="section-shell hero-shell float-in p-6 md:p-8 lg:p-10">
+        <div className="absolute -right-12 top-10 h-44 w-44 rounded-full bg-[rgba(93,167,160,0.14)] blur-2xl" />
+        <div className="absolute bottom-0 left-10 h-32 w-32 rounded-full bg-[rgba(222,108,75,0.14)] blur-2xl" />
+
+        <div className="relative flex flex-wrap items-start justify-between gap-4">
+          <div className="space-y-6">
+            <div className="flex flex-wrap items-center gap-3">
+              <BrandIdentity language={language} />
+              <div className="soft-tag text-xs">{t.eyebrow}</div>
+            </div>
+            <div className="max-w-3xl">
+              <h1 className="display-title mt-2 text-5xl font-semibold md:text-7xl">
+                Joseph&apos;s <span className="gradient-text">AI portfolio</span>
+              </h1>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {t.badges.map((badge) => (
-              <span key={badge} className="code-chip rounded-full border border-ink/20 bg-white px-3 py-1 text-xs text-ink/80">
-                {badge}
-              </span>
-            ))}
-          </div>
+          <LanguageToggle language={language} setLanguage={setLanguage} />
         </div>
 
-        <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-5xl">AI Portfolio Agent</h1>
-        <p className="max-w-3xl text-base text-ink/80 md:text-lg">{t.subtitle}</p>
-      </header>
+        <div className="relative mt-8 grid gap-4 md:grid-cols-3">
+          {[t.heroStatA, t.heroStatB, t.heroStatC].map((stat, index) => (
+            <div key={stat} className={`section-shell ${index === 1 ? "blob-card-alt" : "blob-card"} bg-[rgba(255,251,246,0.78)] p-4`}>
+              <p className="code-chip text-[11px] uppercase tracking-[0.24em] text-[var(--muted)]/70">0{index + 1}</p>
+              <p className="mt-3 text-sm font-medium leading-6">{stat}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <section className="grid gap-4 md:grid-cols-3">
-        <Link href={withLanguage("/chat", language)} className="tech-panel group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-accent/50">
-          <p className="code-chip mb-2 text-xs uppercase tracking-[0.2em] text-ink/60">mode_01</p>
-          <h2 className="mb-2 text-xl font-semibold">{t.askTitle}</h2>
-          <p className="text-sm text-ink/75">{t.askText}</p>
-        </Link>
-        <Link href={withLanguage("/job-fit", language)} className="tech-panel group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-accent/50">
-          <p className="code-chip mb-2 text-xs uppercase tracking-[0.2em] text-ink/60">mode_02</p>
-          <h2 className="mb-2 text-xl font-semibold">{t.fitTitle}</h2>
-          <p className="text-sm text-ink/75">{t.fitText}</p>
-        </Link>
-        <Link href={withLanguage("/about", language)} className="tech-panel group rounded-2xl p-5 transition hover:-translate-y-0.5 hover:border-accent/50">
-          <p className="code-chip mb-2 text-xs uppercase tracking-[0.2em] text-ink/60">mode_03</p>
-          <h2 className="mb-2 text-xl font-semibold">{t.aboutTitle}</h2>
-          <p className="text-sm text-ink/75">{t.aboutText}</p>
-        </Link>
+      <section className="mt-6 grid gap-4 md:grid-cols-3">
+        {cards.map((card, index) => (
+          <Link
+            key={card.href}
+            href={card.href}
+            className={`section-shell ${cardShapes[index]} float-in-delayed group min-h-[220px] p-6 transition duration-200 hover:-translate-y-1`}
+          >
+            <div className="flex h-full flex-col justify-between gap-6">
+              <div>
+                <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">{card.mode}</p>
+                <h2 className="mt-4 text-2xl font-semibold">{card.title}</h2>
+                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{card.text}</p>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="pill-button pill-secondary text-sm">{language === "fr" ? "Explorer" : "Explore"}</span>
+                <span className="text-2xl text-[var(--accent)] transition group-hover:translate-x-1">↗</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </section>
     </main>
   );

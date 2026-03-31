@@ -12,9 +12,10 @@ STRUCTURED_DATA_DIR = DATA_DIR / "structured"
 VECTOR_STORE_DIR = DATA_DIR / "vector_store"
 TOP_K = int(os.getenv("TOP_K", "5"))
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "") or os.getenv("\ufeffOPENAI_API_KEY", "")
 OPENAI_CHAT_MODEL = os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")
 OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 USE_OPENAI = bool(OPENAI_API_KEY)
 
 ENABLE_LLM_JUDGE = os.getenv("ENABLE_LLM_JUDGE", "0").strip().lower() in {"1", "true", "yes", "on"}
+FORCE_LLM_CHAT = os.getenv("FORCE_LLM_CHAT", "0").strip().lower() in {"1", "true", "yes", "on"}

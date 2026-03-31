@@ -22,9 +22,8 @@ export default function ChatPage() {
       </div>
 
       <section className="section-shell hero-shell mt-6 p-6 md:p-8">
-        <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">flow_01</p>
         <h1 className="display-title mt-4 text-4xl font-semibold md:text-6xl">
-          {language === "fr" ? "Conversation" : "Conversation"} <span className="gradient-text">studio</span>
+          {language === "fr" ? "Conversation" : "Conversation"} <span className="gradient-text">chat</span>
         </h1>
       </section>
 

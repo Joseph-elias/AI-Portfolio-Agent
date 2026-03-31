@@ -7,6 +7,7 @@ from fastapi import APIRouter
 from app.models.schemas import ChatRequest, ChatResponse
 from app.services.citation_builder import build_sources
 from app.services.consistency_engine import ConsistencyEngine
+from app.core.config import FORCE_LLM_CHAT
 from app.services.language import detect_language
 from app.services.llm import ResponseComposer
 from app.services.llm_judge import LLMJudge
@@ -231,7 +232,9 @@ def chat(payload: ChatRequest) -> ChatResponse:
     source_names = list(dict.fromkeys([c.source for c in chunks]))
 
     deterministic = consistency.deterministic_answer(plan, language)
-    if deterministic:
+    use_deterministic = bool(deterministic) and (not composer.enabled or not FORCE_LLM_CHAT)
+
+    if use_deterministic:
         answer = deterministic
     else:
         answer = composer.compose_about_answer(
@@ -259,9 +262,11 @@ def chat(payload: ChatRequest) -> ChatResponse:
         answer = judge_result.revised_answer
 
     confidence_note = (
-        "LLM answer grounded in retrieved sources." if composer.enabled else "Fallback answer grounded in retrieved sources."
+        "LLM answer grounded in retrieved sources."
+        if composer.enabled
+        else f"Fallback answer grounded in retrieved sources. Reason: {composer.disabled_reason}."
     )
-    if deterministic:
+    if use_deterministic:
         confidence_note = "Deterministic truth-profile answer with retrieval support."
     elif judge_result.checked:
         confidence_note += " LLM judge checked for consistency."
@@ -270,9 +275,9 @@ def chat(payload: ChatRequest) -> ChatResponse:
         confidence_note = (
             "Reponse LLM basee sur les sources recuperees."
             if composer.enabled
-            else "Reponse de secours basee sur les sources recuperees."
+            else f"Reponse de secours basee sur les sources recuperees. Raison: {composer.disabled_reason}."
         )
-        if deterministic:
+        if use_deterministic:
             confidence_note = "Reponse deterministe basee sur le profil de verite et appuyee par la recuperation."
         elif judge_result.checked:
             confidence_note += " Verification LLM judge effectuee pour la coherence."

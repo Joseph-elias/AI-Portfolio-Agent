@@ -15,9 +15,6 @@
     <div className="section-shell blob-card p-5">
       <div className="mb-4 flex items-center justify-between gap-3">
         <div>
-          <p className="code-chip text-[11px] uppercase tracking-[0.28em] text-[var(--muted)]/80">
-            {language === "fr" ? "prompts fluides" : "fluid prompts"}
-          </p>
           <h3 className="mt-2 text-lg font-semibold">{language === "fr" ? "Questions rapides" : "Quick starters"}</h3>
         </div>
         <div className="h-10 w-10 rounded-full bg-[rgba(93,167,160,0.16)]" />

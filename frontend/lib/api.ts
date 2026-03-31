@@ -1,9 +1,10 @@
 export type SourceItem = { source: string; snippet: string };
 export type ChatHistoryTurn = { role: "assistant" | "user"; content: string };
+export type ChatResponse = { answer: string; sources: SourceItem[]; confidence_note: string };
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-export async function postChat(message: string, language: "en" | "fr", history: ChatHistoryTurn[] = []) {
+export async function postChat(message: string, language: "en" | "fr", history: ChatHistoryTurn[] = []): Promise<ChatResponse> {
   const res = await fetch(`${API_BASE}/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

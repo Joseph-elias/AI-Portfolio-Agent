@@ -39,9 +39,9 @@ export default function HomePage() {
   const t = copy[language];
 
   const cards = [
-    { href: withLanguage("/chat", language), title: t.askTitle, text: t.askText, mode: "flow_01" },
-    { href: withLanguage("/job-fit", language), title: t.fitTitle, text: t.fitText, mode: "flow_02" },
-    { href: withLanguage("/about", language), title: t.aboutTitle, text: t.aboutText, mode: "flow_03" }
+    { href: withLanguage("/chat", language), title: t.askTitle, text: t.askText },
+    { href: withLanguage("/job-fit", language), title: t.fitTitle, text: t.fitText },
+    { href: withLanguage("/about", language), title: t.aboutTitle, text: t.aboutText }
   ];
 
   return (
@@ -68,7 +68,6 @@ export default function HomePage() {
         <div className="relative mt-8 grid gap-4 md:grid-cols-3">
           {[t.heroStatA, t.heroStatB, t.heroStatC].map((stat, index) => (
             <div key={stat} className={`section-shell ${index === 1 ? "blob-card-alt" : "blob-card"} bg-[rgba(255,251,246,0.78)] p-4`}>
-              <p className="code-chip text-[11px] uppercase tracking-[0.24em] text-[var(--muted)]/70">0{index + 1}</p>
               <p className="mt-3 text-sm font-medium leading-6">{stat}</p>
             </div>
           ))}
@@ -84,7 +83,6 @@ export default function HomePage() {
           >
             <div className="flex h-full flex-col justify-between gap-6">
               <div>
-                <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">{card.mode}</p>
                 <h2 className="mt-4 text-2xl font-semibold">{card.title}</h2>
                 <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{card.text}</p>
               </div>

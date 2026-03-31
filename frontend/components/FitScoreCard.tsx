@@ -4,9 +4,6 @@
 
   return (
     <div className="section-shell blob-card p-6">
-      <p className="code-chip text-[11px] uppercase tracking-[0.28em] text-[var(--muted)]/80">
-        {language === "fr" ? "lecture du fit" : "fit reading"}
-      </p>
       <div className="mt-6 flex items-center justify-center">
         <div className="relative grid h-40 w-40 place-items-center rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(255,244,238,0.9)_70%)] shadow-[0_24px_40px_rgba(31,35,64,0.08)]">
           <svg viewBox="0 0 120 120" className="absolute inset-0 h-full w-full -rotate-90">

@@ -1,8 +1,7 @@
 ﻿"use client";
 
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
-import { postChat, SourceItem, type ChatHistoryTurn } from "@/lib/api";
-import SourceList from "@/components/SourceList";
+import { postChat, type ChatHistoryTurn } from "@/lib/api";
 import SampleQuestions from "@/components/SampleQuestions";
 
 type Props = { language: "en" | "fr" };
@@ -35,13 +34,11 @@ function cleanAssistantText(text: string): string {
 export default function ChatBox({ language }: Props) {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>([createGreeting(language)]);
-  const [sources, setSources] = useState<SourceItem[]>([]);
   const [loading, setLoading] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMessages([createGreeting(language)]);
-    setSources([]);
     setMessage("");
   }, [language]);
 
@@ -68,7 +65,6 @@ export default function ChatBox({ language }: Props) {
 
     try {
       const data = await postChat(trimmed, language, history);
-      setSources(data.sources || []);
 
       const assistantMessage: ChatMessage = {
         id: `a_${Date.now()}`,
@@ -164,7 +160,6 @@ export default function ChatBox({ language }: Props) {
 
       <aside className="space-y-5">
         <SampleQuestions language={language} onPick={setMessage} />
-        <SourceList sources={sources} language={language} />
       </aside>
     </div>
   );

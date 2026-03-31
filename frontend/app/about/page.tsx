@@ -7,18 +7,18 @@ import { useAppLanguage, withLanguage } from "@/lib/language";
 
 const links = {
   en: [
-    { label: "Resume (EN)", href: "#", tone: "Warm positioning summary for English-speaking recruiters." },
-    { label: "Resume (FR)", href: "#", tone: "French version for local academic or hiring contexts." },
-    { label: "GitHub", href: "https://github.com/joseph-elias", tone: "Code, repositories, and implementation range." },
-    { label: "LinkedIn", href: "https://www.linkedin.com/", tone: "Professional profile and career narrative." },
-    { label: "Technical portfolio", href: "https://joseph-elias.github.io/Portfolio-joseph/", tone: "A broader portfolio view beyond the assistant." }
+    { label: "Resume (EN)", href: "#" },
+    { label: "Resume (FR)", href: "#" },
+    { label: "GitHub", href: "https://github.com/joseph-elias" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "Technical portfolio", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
   ],
   fr: [
-    { label: "CV (anglais)", href: "#", tone: "Version positionnee pour recruteurs internationaux." },
-    { label: "CV (francais)", href: "#", tone: "Version adaptee au contexte local ou academique." },
-    { label: "GitHub", href: "https://github.com/joseph-elias", tone: "Code, depots et amplitude technique." },
-    { label: "LinkedIn", href: "https://www.linkedin.com/", tone: "Profil professionnel et trajectoire." },
-    { label: "Portfolio technique", href: "https://joseph-elias.github.io/Portfolio-joseph/", tone: "Vue plus large du travail au-dela de l assistant." }
+    { label: "CV (anglais)", href: "#" },
+    { label: "CV (francais)", href: "#" },
+    { label: "GitHub", href: "https://github.com/joseph-elias" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "Portfolio technique", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
   ]
 } as const;
 
@@ -39,14 +39,13 @@ export default function AboutPage() {
       </div>
 
       <section className="section-shell hero-shell mt-6 p-6 md:p-8">
-        <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">flow_03</p>
         <h1 className="display-title mt-4 text-4xl font-semibold md:text-6xl">
-          {language === "fr" ? "Profil" : "Profile"} <span className="gradient-text">access</span>
+          {language === "fr" ? "Profil" : "Profile"} <span className="gradient-text">links</span>
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--muted)] md:text-lg">
           {language === "fr"
-            ? "Tous les liens importants dans une presentation plus douce et plus editoriale, avec une lecture rapide pour recruteurs et partenaires."
-            : "All key links in a softer, more editorial presentation designed for quick recruiter and partner review."}
+            ? "Retrouvez ici tous les liens utiles."
+            : "Find all useful profile links here."}
         </p>
       </section>
 
@@ -59,11 +58,9 @@ export default function AboutPage() {
             target={item.href.startsWith("http") ? "_blank" : undefined}
             rel={item.href.startsWith("http") ? "noreferrer" : undefined}
           >
-            <p className="code-chip text-[11px] uppercase tracking-[0.28em] text-[var(--muted)]/75">link_0{index + 1}</p>
             <div className="mt-4 flex items-start justify-between gap-3">
               <div>
                 <h2 className="text-2xl font-semibold">{item.label}</h2>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{item.tone}</p>
               </div>
               <span className="text-2xl text-[var(--accent)]">↗</span>
             </div>

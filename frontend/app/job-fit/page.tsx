@@ -4,9 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import LanguageToggle from "@/components/LanguageToggle";
 import FitScoreCard from "@/components/FitScoreCard";
-import SourceList from "@/components/SourceList";
 import BrandIdentity from "@/components/BrandIdentity";
-import { postJobFit, SourceItem } from "@/lib/api";
+import { postJobFit } from "@/lib/api";
 import { useAppLanguage, withLanguage } from "@/lib/language";
 
 type JobFitResult = {
@@ -16,7 +15,6 @@ type JobFitResult = {
   matched_skills: string[];
   missing_skills: string[];
   relevant_projects: string[];
-  sources: SourceItem[];
 };
 
 export default function JobFitPage() {
@@ -51,21 +49,13 @@ export default function JobFitPage() {
       <section className="section-shell hero-shell mt-6 p-6 md:p-8">
         <div className="grid gap-5 md:grid-cols-[1.25fr_0.85fr] md:items-end">
           <div>
-            <p className="code-chip text-[11px] uppercase tracking-[0.3em] text-[var(--muted)]/75">flow_02</p>
             <h1 className="display-title mt-4 text-4xl font-semibold md:text-6xl">
               {language === "fr" ? "Lecture" : "Role"} <span className="gradient-text">job fit</span>
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--muted)] md:text-lg">
               {language === "fr"
                 ? "Collez une offre pour obtenir une lecture visuelle et argumentee du match entre le poste et le profil de Joseph."
-                : "Paste a role to get a visual, evidence-based read on how Joseph matches the position."}
-            </p>
-          </div>
-          <div className="section-shell blob-card-alt bg-[linear-gradient(135deg,rgba(255,248,241,0.92),rgba(255,232,220,0.8))] p-5">
-            <p className="text-sm leading-7 text-[var(--muted)]">
-              {language === "fr"
-                ? "Le resultat est pense comme une note de positionnement: score, resume, competences alignees, manques et projets les plus convaincants."
-                : "The result is shaped like a positioning note: score, summary, aligned skills, gaps, and the strongest supporting projects."}
+                : "Paste a role to get a visual read on how Joseph matches the position."}
             </p>
           </div>
         </div>
@@ -122,7 +112,6 @@ export default function JobFitPage() {
                 </div>
               </div>
             </div>
-            <SourceList sources={result.sources || []} language={language} />
           </div>
         </section>
       )}

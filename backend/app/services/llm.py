@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 
-from app.core.config import OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
+from app.core.config import FORCE_LLM_CHAT, OPENAI_API_KEY, OPENAI_CHAT_MODEL, USE_OPENAI
 from app.core.prompts import ABOUT_ME_SYSTEM_PROMPT, JOB_FIT_SYSTEM_PROMPT
 from app.services.profile_loader import ProfileLoader
 
@@ -452,6 +452,16 @@ class ResponseComposer:
     def enabled(self) -> bool:
         return self.client is not None
 
+    @property
+    def disabled_reason(self) -> str:
+        if self.client is not None:
+            return ""
+        if not USE_OPENAI:
+            return "OPENAI_API_KEY is missing"
+        if OpenAI is None:
+            return "openai package import failed"
+        return "OpenAI client unavailable"
+
     def _fallback_about(
         self,
         language: str,
@@ -648,41 +658,43 @@ class ResponseComposer:
         intent: str = "general",
     ) -> str:
         certifications = getattr(self.loader, "certifications", [])
-        education_reply = _education_reply_if_applicable(language, message)
-        if education_reply:
-            return education_reply
 
-        education_reply = _education_reply_if_applicable(language, message)
-        if education_reply:
-            return education_reply
+        if not self.enabled or not FORCE_LLM_CHAT:
+            education_reply = _education_reply_if_applicable(language, message)
+            if education_reply:
+                return education_reply
 
-        publication_reply = _publication_reply_if_applicable(language, message)
-        if publication_reply:
-            return publication_reply
+            education_reply = _education_reply_if_applicable(language, message)
+            if education_reply:
+                return education_reply
 
-        intro_reply = _self_intro_reply_if_applicable(language, message)
-        if intro_reply:
-            return intro_reply
+            publication_reply = _publication_reply_if_applicable(language, message)
+            if publication_reply:
+                return publication_reply
 
-        internship_reply = _internship_experience_reply_if_applicable(language, message)
-        if internship_reply:
-            return internship_reply
+            intro_reply = _self_intro_reply_if_applicable(language, message)
+            if intro_reply:
+                return intro_reply
 
-        contract_reply = _contract_reply_if_applicable(language, message)
-        if contract_reply:
-            return contract_reply
+            internship_reply = _internship_experience_reply_if_applicable(language, message)
+            if internship_reply:
+                return internship_reply
 
-        professional_reply = _professional_experience_reply_if_applicable(language, message)
-        if professional_reply:
-            return professional_reply
+            contract_reply = _contract_reply_if_applicable(language, message)
+            if contract_reply:
+                return contract_reply
 
-        skill_reply = _profile_skill_reply_if_applicable(language, message, self.loader.skills, certifications)
-        if skill_reply:
-            return skill_reply
+            professional_reply = _professional_experience_reply_if_applicable(language, message)
+            if professional_reply:
+                return professional_reply
 
-        cert_reply = _certification_reply_if_applicable(language, message, certifications)
-        if cert_reply:
-            return cert_reply
+            skill_reply = _profile_skill_reply_if_applicable(language, message, self.loader.skills, certifications)
+            if skill_reply:
+                return skill_reply
+
+            cert_reply = _certification_reply_if_applicable(language, message, certifications)
+            if cert_reply:
+                return cert_reply
 
         if not self.enabled:
             return self._fallback_about(language, message, snippets, source_names)

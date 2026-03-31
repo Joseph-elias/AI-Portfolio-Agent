@@ -7,15 +7,15 @@ import { useAppLanguage, withLanguage } from "@/lib/language";
 
 const links = {
   en: [
-    { label: "Resume (EN)", href: "#" },
-    { label: "Resume (FR)", href: "#" },
+    { label: "Resume (EN)", href: "/resume_en.pdf" },
+    { label: "Resume (FR)", href: "/resume_fr.pdf" },
     { label: "GitHub", href: "https://github.com/joseph-elias" },
     { label: "LinkedIn", href: "https://www.linkedin.com/" },
     { label: "Technical portfolio", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
   ],
   fr: [
-    { label: "CV (anglais)", href: "#" },
-    { label: "CV (francais)", href: "#" },
+    { label: "CV (anglais)", href: "/resume_en.pdf" },
+    { label: "CV (francais)", href: "/resume_fr.pdf" },
     { label: "GitHub", href: "https://github.com/joseph-elias" },
     { label: "LinkedIn", href: "https://www.linkedin.com/" },
     { label: "Portfolio technique", href: "https://joseph-elias.github.io/Portfolio-joseph/" }
@@ -55,8 +55,8 @@ export default function AboutPage() {
             key={item.label}
             className={`section-shell ${index % 2 === 0 ? "blob-card" : "blob-card-alt"} p-5 transition duration-200 hover:-translate-y-1`}
             href={item.href}
-            target={item.href.startsWith("http") ? "_blank" : undefined}
-            rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+            target={item.href.startsWith("http") || item.href.endsWith(".pdf") ? "_blank" : undefined}
+            rel={item.href.startsWith("http") || item.href.endsWith(".pdf") ? "noreferrer" : undefined}
           >
             <div className="mt-4 flex items-start justify-between gap-3">
               <div>
